@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Legacy Ladies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Nunito&display=swap');
+
+body {
+  height:3100px;
+  background: linear-gradient(#AC0D0D 0%, #F48B29 51%, #F0C929 75%);
+  margin:80px;
+  background-image: url('lava.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-style:bold;
+  font-size:60px;
+  text-align:center;
+  color:white;
+}
+h2{
+  font-family: 'DM Sans', sans-serif;
+  font-style:italic;
+  font-size:26px;
+  text-align:center;
+  color:white;
+}
+h3{
+  font-family: 'Nunito', sans-serif;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  font-size:19px;
+  text-align:center;
+  color:white;
+}
+
+div p {
+  font-family: 'Nunito', sans-serif;
+  color:#864114;
+  text-align:center;
+}
+
+.intro{
+  text-align:center;
+}
+.container {
+		display: flex;
+		width: 100%;
+	}
+.one {
+		background: url(1.jpg);
+	}
+
+.two {
+		background: url(2.jpg);
+	}
+	
+.three {
+		background: url(3.jpg);
+	}
+	
+.four {
+		background: url(4.jpg);
+	}
+
+.five {
+		background: url(5.jpg);
+	}
+	
+.six {
+		background: url(6.jpg);
+	}
+	
+.seven {
+		background: url(7.jpg);
+	}
+
+.section {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 80vh;
+		cursor: pointer;
+		flex: 0.2;
+		margin: 8px;
+		position: relative;
+		transition: all 0.7s ease-out;
+	}
+
+.section.active {
+		flex: 3;
+	}
+
+.collapsible {
+  background-color: #9B3826;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-style:bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 28px;
+}
+
+.active, .collapsible:hover {
+  background-color: #FDD15A;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #FBE6C2;
+  opacity:0.92;
+}
+  
+.img{
+  margin-right:50px;
+  margin-left:90px;
+  width:400px;
+  height:400px;
+}
+.yt{
+  width:1035px;
+  height:495px;
+  margin-right:45px;
+  margin-left:45px;
+}
+</style>
+  
+
+</head>
+<body>
+  
+<h1>Legacy Ladies</h1>
+<h2>If there are ladies, there is legacy!</h2>
+<p>Welcome to our legacy world! Hi, we are Legacy Ladies. A channel which shows the daily lifestyle of different people through vlogs. These videos are used to share life-changing tips, advice, and promotions. Join us on this journey and always remember, "If there are ladies, there is legacy!"!</p>
+
+<button type="button" class="collapsible">Brand Logo</button>
+<div class="content">
+  <img src="logo1.png" class="img">
+  <img src="logo2.png" class="img">
+  <p>We incorporated triangles in our logo in order to support, stabilize, and stiffen our relationship inside (represented by the large triangle in the middle) and outside our group (represented by the triangles in the border). We would like to build a strong connection with our fans, supporters, collaborators, and such. The circles represent that we are a whole group with a well built mission to help people, and the curves serve as the visual as we radiate this energy to other people.</p>
+  </div>
+  
+<button type="button" class="collapsible">YouTube</button>
+<div class="content">
+<h3 class="intro">Channel</h3>
+<p>We planned to post our works online, specifically on the social media platform YouTube, to introduce our channel and group to the global world. A preview of our channel is provided below. If you want, you can also subscribe 😉. Please click the given image to be directed to our YouTube channel.</p>
+<a href="https://www.youtube.com/@legacyladies7">
+<img src="blepzz.png" alt="Youtube Channel Screenshot" class="yt">
+</a>
+
+<br>
+<br>
+
+<h3 class="intro">Introduction Video</h3>
+<p class="intro">Of course, every online channel, video, or vlog begins with an introduction. We also accomplished one. We kept it short and simple to keep it entertaining and enjoyable while also introducing ourselves to the audience. You may see it for yourself!</p>
+<video class="yt" controls>
+  <source src="intro.mp4" type="video/mp4">
+Introduction Video
+</video>
+
+<br>
+<br>
+
+<h3 class="intro">Content</h3>
+<p> Our content is Lifestyle Vlogs which has to offer/sources of entertainment while also creating and sharing awareness as well as giving help about certain social topics through our lifestyle vlogs.</p>
+</div>
+
+
+<button type="button" class="collapsible">Team</button>
+<div class="content">
+<p>Here are the names of the beautiful ladies which made this project possible!</p>
+ <div class="container">
+		
+	<div class="section one active"></div>
+	<div class="section two"></div>
+	<div class="section three"></div>
+	<div class="section four"></div>
+	<div class="section five"></div>
+	<div class="section six"></div>
+	<div class="section seven"></div>
+	</div>
+<script>
+	
+	const sections = document.querySelectorAll(".section");
+
+	sections.forEach((section) => {
+		section.addEventListener("click", () => {
+			
+		// remove active class from all another section and
+		// add it to the selected section
+		sections.forEach((section) => {
+			section.classList.remove("active");
+		});
+		section.classList.add("active");
+		});
+	});
+</script>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<h2>Share. Entertain. Promote. Create a legacy!</h2>
+<a href="https://www.reddit.com/r/wallpapers/comments/6trq9r/lava_1920x1080/?utm_source=ifttt">
+<p style="font-size:10px;color:white">Resource:https://i.redd.it/q4ive0dtntfz.jpg
+</p>
+</a>
+
+</body>
+</html>
